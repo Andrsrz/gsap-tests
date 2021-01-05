@@ -2,4 +2,4 @@
 For my learning purposes
 
 ## License
-[MIT]().
+[MIT](https://github.com/Andrsrz/gsap-tests/blob/master/LICENSE).
