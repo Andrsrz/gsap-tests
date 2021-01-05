@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev:start": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/Andrsrz/gsap-tests/issues"
   },
-  "homepage": "https://github.com/Andrsrz/gsap-tests#readme"
+  "homepage": "https://github.com/Andrsrz/gsap-tests#readme",
+  "dependencies": {
+    "gsap": "^3.5.1"
+  },
+  "devDependencies": {
+    "css-loader": "^5.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1"
+  }
 }
