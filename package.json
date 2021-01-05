@@ -1,0 +1,19 @@
+{
+  "name": "gsap-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrsrz/gsap-tests.git"
+  },
+  "author": "Andres Ruiz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Andrsrz/gsap-tests/issues"
+  },
+  "homepage": "https://github.com/Andrsrz/gsap-tests#readme"
+}
