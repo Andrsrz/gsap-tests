@@ -19,6 +19,7 @@ function boxes(){
 }
 
 boxes();
-gsap.from(".green", {duration: 1, x: 600});
-gsap.to(".box", {duration: 2, x: 300});
-gsap.to(".green", {duration: 3, rotation: 360, scale: 0.5});
+gsap.from(".grey", {duration: 1, x: 600});
+gsap.to(".box", {duration: 2, x: 300, rotation: 360});
+gsap.to(".grey", {duration: 3, scale: 0.75});
+gsap.to(".green", {duration: 3, scale: 0.6});
