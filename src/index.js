@@ -23,6 +23,7 @@ function buttons(tweenBoxes, tweenGrey, tweenGreen){
 	const restart = document.createElement('button');
 	const pause = document.createElement('button');
 	const resume = document.createElement('button');
+	const reverse = document.createElement('button');
 
 	container.id = 'button-container';
 	restart.classList.add('button');
@@ -31,6 +32,8 @@ function buttons(tweenBoxes, tweenGrey, tweenGreen){
 	pause.innerText = "PAUSE";
 	resume.classList.add('button');
 	resume.innerText = "RESUME";
+	reverse.classList.add('button');
+	reverse.innerText = "REVERSE";
 
 	restart.addEventListener("click", () => {
 		tweenBoxes.restart();
@@ -50,9 +53,16 @@ function buttons(tweenBoxes, tweenGrey, tweenGreen){
 		tweenGreen.resume();
 	});
 
+	reverse.addEventListener("click", () => {
+		tweenBoxes.reverse();
+		tweenGrey.reverse();
+		tweenGreen.reverse();
+	});
+
 	container.appendChild(restart);
 	container.appendChild(pause);
 	container.appendChild(resume);
+	container.appendChild(reverse);
 	document.body.appendChild(container);
 }
 
