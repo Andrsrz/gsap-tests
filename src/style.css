@@ -20,3 +20,12 @@ body {
 .green {
 	background-color: green;
 }
+
+#button-container {
+	display: flex;
+}
+
+.button {
+	border-radius: 5px;
+	cursor: pointer;
+}
