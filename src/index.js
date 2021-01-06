@@ -18,8 +18,12 @@ function boxes(){
 	document.body.appendChild(boxGreen);
 }
 
+function tweenBoxes(){ console.log("Boxes moved out"); }
+function tweenGrey(){ console.log("Grey box is now smaller"); }
+function tweenGreen(){ console.log("Green box is now smaller"); }
+
 boxes();
 gsap.from(".grey", {duration: 1, x: 600});
-gsap.to(".box", {duration: 2, x: 300, rotation: 360, ease: "bounce"});
-gsap.to(".grey", {duration: 3, scale: 0.75});
-gsap.to(".green", {duration: 3, scale: 0.6});
+gsap.to(".box", {duration: 2, x: 300, rotation: 360, ease: "back", onComplete: tweenBoxes});
+gsap.to(".grey", {duration: 3, scale: 0.75, onComplete: tweenGrey});
+gsap.to(".green", {duration: 3, scale: 0.6, onComplete: tweenGreen});
